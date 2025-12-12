@@ -59,7 +59,7 @@ Development proceeded through multiple exploratory phases. You can find more det
 
 * **LeRobot v0.1**
   [https://huggingface.co/docs/lerobot/installation](https://huggingface.co/docs/lerobot/installation)
-  - v0.1 code included in this repository
+  - v0.1 code included already in creative-tool-use repository
 * **Ubuntu 22.04**
 * **Python 3.10**
 
