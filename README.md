@@ -20,7 +20,7 @@ A **state machine framework (SMF)** organizes the pipeline into modular subtasks
 
 ## Project Phases
 
-Development proceeded through multiple exploratory phases. You can find more detail on each phase in the linked READMEs below.
+Development proceeded through multiple exploratory phases. You can find details about each phase in the linked READMEs below.
 
 ### Initial Exploration
 
