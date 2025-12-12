@@ -4,11 +4,9 @@
 
 ## Overview
 
-| Pliers | Can Top Opener |
-|------------------|-----------------------------|
-| ![pliers gif](../assets/gif/pliers.gif) | ![bottle top opener gif](../assets/gif/bottle_top_opener.gif) |
+![scissor closeup](../assets/gif/scissors_closeup.gif)
 
-The initial phase of this project focused on experimenting with creative tool use on a **Franka Research 3 robot arm**. The goal during this stage was to explore whether a robot could operate a **one-degree-of-freedom tool (scissors, pliers, can opener)** as part of a larger imitation-learning pipeline.
+The initial phase of this project focused on experimenting with creative tool use on a **Franka Research 3 robot arm**. The goal during this stage was to explore whether a robot could operate a **one degree of freedom tool (scissors, pliers, can opener)** as part of a larger imitation-learning pipeline.
 
 This work laid the foundation for later phases involving the SO-101 robot arm and full task deployment.
 
@@ -16,12 +14,13 @@ This work laid the foundation for later phases involving the SO-101 robot arm an
 
 ## Custom End Effector Development
 
-![scissors interface CAD](../assets/gif/scissors_interface_CAD.gif)
+![scissors interface CAD](../assets/img/scissors_interface_CAD.png)
 
-To enable the Franka 3 to operate scissors, I designed a **modified snap-click end effector** that securely mounted a standard pair of scissors to the robot wrist.  
-Early prototypes also included an optional pliers and can opener attachment for additional experimentation.
+To enable the Franka 3 to operate scissors, I designed a **modified snap-click end effector** that securely mounted a standard pair of scissors to the robot wrist. Early prototypes also included an optional pliers and can opener attachment for additional experimentation.
 
-![scissor closeup](../assets/gif/scissors_closeup.gif)
+| Pliers | Can Top Opener |
+|------------------|-----------------------------|
+| ![pliers gif](../assets/gif/pliers.gif) | ![bottle top opener gif](../assets/gif/bottle_top_opener.gif) |
 
 Key steps included:
 
@@ -31,18 +30,28 @@ Key steps included:
 
 ---
 
-## UMI Pipeline Data Collection
+## Data Collection
 
 ![scissors data collection](../assets/gif/scissors_data_collection.gif)
 
-During this phase, I also collected demonstration data using the **Stanford UMI pipeline**:  
-https://umi-gripper.github.io/
+During this phase, I collected demonstration data using a modified [**Stanford UMI gripper**](https://umi-gripper.github.io/):
 
-| Masks (before and after) | Colored Mask Over Scissors |
-|------------------|-----------------------------|
-| ![mask black and white](../assets/img/mask_bandw.png) | ![UMI colored mask](../assets/img/umi_colored_mask.png) |
+<table>
+  <tr>
+    <th>Masks (Before and After)</th>
+    <th>Colored Mask Over Scissors</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="../assets/img/mask_bandw.png" width="300"/>
+    </td>
+    <td align="center">
+      <img src="../assets/img/umi_colored_mask.png" width="300"/>
+    </td>
+  </tr>
+</table>
 
-Work included recording teleoperated demonstrations using the UMI handheld device. Because the scissors extended beyond the UMI gripper’s default field of view, I **extended the UMI image mask** to include the full length of the scissors  
+Because the scissors extended beyond the UMI gripper’s default field of view, I **extended the UMI image mask** to include the full length of the scissors.
 
 ---
 
@@ -50,7 +59,7 @@ Work included recording teleoperated demonstrations using the UMI handheld devic
 
 This phase surfaced several constraints that influenced later design decisions:
 
-- **Outdated Franka control software** caused compatibility issues with newer hardware  
+- **Outdated / deprecated Franka control software** caused compatibility issues with newer hardware  
 - Image-mask adjustments were required to correctly capture the longer tool
 - Progress slowed as the software stack diverged from current libraries, pushing the project toward using to a new platform (SO-101 arm)
 
