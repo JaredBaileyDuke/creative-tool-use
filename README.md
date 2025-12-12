@@ -9,7 +9,7 @@ Robot imitation learning for one degree of freedom creative tool use
 This project explores **creative tool use in robotics**. Specifically, a robot arm was trained to both **position and cut a food item** using a pair of scissors mounted on a **custom end effector**. Traditionally, a robot must reposition the object using a pick and place tool before switching to a cutting tool, increasing task complexity and time.
 
 Here, the robot instead uses the scissors themselves as a **multi-purpose tool**:
-- **Positioning:** Move and align the food item when it is not in an ideal cutting location
+- **Positioning:** Move and align the food item when it is not in an ideal cutting location, **utilizing both scissor blades**
 - **Cutting:** Execute the final slicing motion once aligned
 
 This approach removes the need for an end effector swap, improving **efficiency**, **robustness**, and **task generality**.
