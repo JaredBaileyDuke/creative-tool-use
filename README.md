@@ -34,7 +34,7 @@ Development proceeded through multiple exploratory phases. You can find details 
 
 ### Final Deployment
 
-![final deployment](assets/gif/final_deployment.gif)
+![final deployment](assets/gif/great_work_4.gif)
 [View README](./final_deployment/README.md)
 
 ---
