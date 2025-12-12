@@ -1,5 +1,5 @@
 # Creative Tool Use
-Robot imitation learning for one-degree-of-freedom creative tool use
+Robot imitation learning for one degree-of-freedom creative tool use
 
 ![overview gif](assets/gif/homepage_overview.gif)
 
@@ -12,7 +12,7 @@ Here, the robot instead uses the scissors themselves as a **multi-purpose tool**
 - **Positioning:** Move and align the food item when it is not in an ideal cutting location
 - **Cutting:** Execute the final slicing motion once aligned
 
-This approach removes the need for an end-effector swap, improving **efficiency**, **robustness**, and **task generality**.
+This approach removes the need for an end effector swap, improving **efficiency**, **robustness**, and **task generality**.
 
 A **state machine framework (SMF)** organizes the pipeline into modular subtasks. Two custom **YOLO classification models** verify completion of each subtask. If a failure is detected, the SMF automatically revisits prior subtasks to recover and continue the workflow.
 
