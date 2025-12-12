@@ -67,6 +67,9 @@ Development proceeded through multiple exploratory phases. You can find more det
 ## Running the Pipeline
 
 To launch the state machine controller (Note that there are separate conda environments for lerobot and YOLO classification):
+- For lerobot environment, follow instructions on above linked installation page
+- For YOLO classification environment, only ultralytics package is needed
+  - Separate environments created in order to prevent dependency issues
 
 ```bash
 python3 main.py
