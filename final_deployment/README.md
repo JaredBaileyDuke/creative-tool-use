@@ -103,7 +103,4 @@ The final deployment demonstrated that creative tool use with a one degree of fr
 - A state machine governs retries and validation  
 - YOLO models verify progress between stages  
 
-This phase completes the end-to-end system:  
-**Hardware → Demonstrations → Training → Classification → Deployment**.
-
 Future work may extend this approach to more complex tools, less controlled environments, or multi degree of freedom tool dynamics.
