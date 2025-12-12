@@ -66,7 +66,7 @@ Development proceeded through multiple exploratory phases. You can find more det
 
 ## Running the Pipeline
 
-To launch the state machine controller:
+To launch the state machine controller (Note that there are separate conda environments for lerobot and YOLO classification):
 
 ```bash
 python3 main.py
