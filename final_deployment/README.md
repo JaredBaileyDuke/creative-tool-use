@@ -23,13 +23,15 @@ The mount performed well at full size but revealed a limitation at the smaller s
 
 ## Subtask Performance
 
-Due to task complexity, the larger task of moving and cutting was split into subtasks. Each subtask involved its own data collection and training.
+| ![move gif](../assets/gif/final_deployment.gif) | ![cut gif](../assets/gif/homepage_overview.gif) |
 
-### Cutting Subtask — **Worked Well**
-The robot successfully cut the cheese puff using the scissor blades once the item was positioned within an pre-determined space on the cutting board. Sometimes the robot arm was overeager and would cut the cheese puff multiple times since the cheese puff didn't move much after the cuts.
+Due to task complexity, the larger task of moving and cutting was split into subtasks. Each subtask involved its own data collection and training.
 
 ### Push Only Subtask — **Worked Well**
 Simple linear pushing with the scissor blades was reliable and consistent. Since cheese puffs roll easily, some difficulty was seen when this occurred. However, the ACT policy was often able to overcome this difficulty.
+
+### Cutting Subtask — **Worked Well**
+The robot successfully cut the cheese puff using the scissor blades once the item was positioned within an pre-determined space on the cutting board. Sometimes the robot arm was overeager and would cut the cheese puff multiple times since the cheese puff didn't move much after the cuts.
 
 ---
 
