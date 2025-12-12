@@ -21,11 +21,7 @@ The mount performed well at full size but revealed a limitation at the smaller s
 
 ---
 
-## Task Performance Summary
-
-| ![gif1](../assets/gif/great_work_1.gif) | ![gif2](../assets/gif/great_work_2.gif) |
-|---------------------------------|---------------------------------|
-| ![gif3](../assets/gif/great_work_3.gif) | ![gif4](../assets/gif/great_work_4.gif) |
+## Subtask Performance
 
 Due to task complexity, the larger task of moving and cutting was split into subtasks. Each subtask involved its own data collection and training.
 
@@ -58,26 +54,30 @@ These models replaced manual human verification and allowed the robot to autonom
 
 ## State Machine Framework (SMF)
 
+| ![gif1](../assets/gif/great_work_1.gif) | ![gif2](../assets/gif/great_work_2.gif) |
+|---------------------------------|---------------------------------|
+| ![gif3](../assets/gif/great_work_3.gif) | ![gif4](../assets/gif/great_work_4.gif) |
+
 The entire pipeline was orchestrated using a **State Machine Framework**, enabling robust decision making and automatic recovery.
 
 The execution flow:
 
 ### **State Descriptions**
 
-#### **ROBOT MOVE**
-Robot pushes the cheese puff toward the center of the cutting board.
+**ROBOT MOVE**
+- Robot pushes the cheese puff toward the center of the cutting board.
 
-#### **YOLO LOCATION**
-YOLO checks whether the cheese puff is in a valid location. If not, the robot repeats the ROBOT MOVE state.
+**YOLO LOCATION**
+- YOLO checks whether the cheese puff is in a valid location. If not, the robot repeats the ROBOT MOVE state.
 
-#### **ROBOT CUT**
-Robot attempts to cut the cheese puff using the scissors.
+**ROBOT CUT**
+- Robot attempts to cut the cheese puff using the scissors.
 
-#### **YOLO CUT**
-YOLO verifies whether the cheese puff was successfully cut. If unsuccessful, the robot returns to the YOLO LOCATION state.
+**YOLO CUT**
+- YOLO verifies whether the cheese puff was successfully cut. If unsuccessful, the robot returns to the YOLO LOCATION state.
 
-#### **ROBOT HOME**
-The robot arm returns to its home location.
+**ROBOT HOME**
+- The robot arm returns to its home location.
 
 Time limits were added to states to prevent the robot from becoming stuck in a failure loop.
 
@@ -86,14 +86,14 @@ Time limits were added to states to prevent the robot from becoming stuck in a f
 ## Additional Learnings
 
 ### System Design & Safety
-- **Fail-safes are mandatory** for multi-step pipelines, especially when retries are possible.
+- **Fail-safes are useful** for multi-step pipelines, especially when retries are possible.
 - Use **separate Conda/virtual environments** for each model (lerobot and YOLO) to preserve dependency requirements.
 - Programs often **lock access to cameras**. Always verify that no other process is using the device.
 - Scissors are **surprisingly difficult to teleoperate**, especially for tasks requiring fine orientation.
 - The SO-101 does **not provide enough force to cut a carrot**, which justified switching to a softer food item (cheese puff).
 - Task decomposition matters: **“Move”** and **“Move + Orient”** must be treated as distinct skills.
 - Faster GPUs means **faster iteration**, but also **faster failures**, which is good for debugging.
-- 
+
 ---
 
 ## Summary
