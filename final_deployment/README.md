@@ -23,7 +23,16 @@ The mount performed well at full size but revealed a limitation at the smaller s
 
 ## Subtask Performance
 
-| ![move gif](../assets/gif/final_deployment.gif) | ![cut gif](../assets/gif/homepage_overview.gif) |
+<table>
+  <tr>
+    <td align="center">
+      <img src="../assets/gif/final_deployment.gif" width="450"/>
+    </td>
+    <td align="center">
+      <img src="../assets/gif/homepage_overview.gif" width="450"/>
+    </td>
+  </tr>
+</table>
 
 Due to task complexity, the larger task of moving and cutting was split into subtasks. Each subtask involved its own data collection and training.
 
