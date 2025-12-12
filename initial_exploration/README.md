@@ -34,7 +34,7 @@ Key steps included:
 
 ![scissors data collection](../assets/gif/scissors_data_collection.gif)
 
-During this phase, I collected demonstration data using a modified [**Stanford UMI gripper**](https://umi-gripper.github.io/):
+During this phase, I collected demonstration data using a modified [**Stanford UMI gripper**](https://umi-gripper.github.io/).
 
 <table>
   <tr>
@@ -43,10 +43,10 @@ During this phase, I collected demonstration data using a modified [**Stanford U
   </tr>
   <tr>
     <td align="center">
-      <img src="../assets/img/mask_bandw.png" width="300"/>
+      <img src="../assets/img/mask_bandw.png" width="450"/>
     </td>
     <td align="center">
-      <img src="../assets/img/umi_colored_mask.png" width="300"/>
+      <img src="../assets/img/umi_colored_mask.png" width="450"/>
     </td>
   </tr>
 </table>
