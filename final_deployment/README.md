@@ -60,8 +60,6 @@ These models replaced manual human verification and allowed the robot to autonom
 
 The entire pipeline was orchestrated using a **State Machine Framework**, enabling robust decision making and automatic recovery.
 
-The execution flow:
-
 ### **State Descriptions**
 
 **ROBOT MOVE**
