@@ -32,7 +32,7 @@ Development proceeded through multiple exploratory phases. You can find details 
 ![pick and place](assets/gif/pick_and_place_overview.gif)
 [View README](./pick_and_place/README.md)
 
-### Final Deployment
+### Final Deployment (pause between subtasks)
 
 ![final deployment](assets/gif/great_work_4.gif)
 [View README](./final_deployment/README.md)
