@@ -67,7 +67,7 @@ This resulted in a consistently successful pick and place execution, but **only*
 
 While limited, this success demonstrated that:
 
-- The imitation-learning pipeline itself was functional  
+- The imitation learning pipeline itself was functional  
 - The SO-101 could reproduce teleoperated motions accurately  
 - Data quality was the primary bottleneck, not the model architecture
 
@@ -87,9 +87,9 @@ Toward the end of this phase, a test run showed the robot **missing the block se
 
 ## Summary
 
-This phase established the foundation for future tool-use learning by:
+This phase established the foundation for future tool use learning by:
 
-- Validating the SO-101 for imitation-learning experiments  
+- Validating the SO-101 for imitation learning experiments  
 - Identifying critical improvements to the camera/lighting/data pipeline  
 - Demonstrating successful (though overfit) policy execution  
 - Revealing stability issues that influenced later design choices
