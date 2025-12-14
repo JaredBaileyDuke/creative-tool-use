@@ -46,8 +46,9 @@ Development proceeded through multiple exploratory phases. You can find details 
   * ACT policy training Google Colab notebook
 * smf.py
   * State Machine Framework (SMF)
-*
-  * YOLO classification inference
+* yolo_classifier.py
+  * YOLO classification inference used in SMF
+  * Associated models included in *yolov8_models/*
 * mask/*.py
   * Create and visualize custom masks for Stanford UMI pipeline
 
@@ -90,3 +91,5 @@ To launch the state machine controller (Note that there are separate conda envir
 ```bash
 python3 smf.py
 ```
+
+*outputs/* directory containing ACT policies not included, as these files are too large for GitHub
