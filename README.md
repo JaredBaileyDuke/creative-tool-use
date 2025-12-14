@@ -39,6 +39,20 @@ Development proceeded through multiple exploratory phases. You can find details 
 
 ---
 
+## Code Created for this Project
+
+* notebooks/*.ipynb
+  * YOLO model training Google Colab notebook
+  * ACT policy training Google Colab notebook
+* smf.py
+  * State Machine Framework (SMF)
+*
+  * YOLO classification inference
+* mask/*.py
+  * Create and visualize custom masks for Stanford UMI pipeline
+
+---
+
 ## Deploying the Pipeline
 
 ### Hardware Requirements
@@ -74,5 +88,5 @@ To launch the state machine controller (Note that there are separate conda envir
   - Separate environments created in order to prevent dependency issues
 
 ```bash
-python3 main.py
+python3 smf.py
 ```
